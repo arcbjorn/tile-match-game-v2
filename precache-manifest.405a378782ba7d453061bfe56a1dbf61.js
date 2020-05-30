@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be3be9c43bff253845abddcad8ca2ed5",
+    "revision": "4d732cfad83b43794e0eb89dded208cc",
     "url": "/tile-match-game-v2/index.html"
   },
   {
-    "revision": "17342eb2b94235719baf",
-    "url": "/tile-match-game-v2/static/css/main.a4335ccd.chunk.css"
+    "revision": "4247e2e4f9b8558e1de9",
+    "url": "/tile-match-game-v2/static/css/main.87d4ccfa.chunk.css"
   },
   {
     "revision": "d23ecac18f87ead272cd",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tile-match-game-v2/static/js/2.8f53814d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "17342eb2b94235719baf",
+    "revision": "4247e2e4f9b8558e1de9",
     "url": "/tile-match-game-v2/static/js/main.be90e90f.chunk.js"
   },
   {

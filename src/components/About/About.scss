@@ -1,0 +1,49 @@
+@import '../../../public/assets/styles/variables.scss';
+
+.about-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: $main-font;
+    color: $highlight-light;
+    text-align: center;
+}
+
+.about-header {
+    & h1 {
+        margin: 0;
+        font-size: 3rem;
+
+        @media screen and (min-width: $extra-large) {
+            font-size: 5rem;
+        }
+    }
+}
+
+.about-content {
+    & p {
+        font-size: 2rem;
+
+        @media screen and (min-width: $extra-large) {
+            font-size: 4rem;
+        }
+    }
+
+    & .about-socials {
+        & span {
+            display: inline-block;
+            margin: .5rem;
+        }
+        
+        & svg {
+            color: $highlight-light;
+
+            &:hover {
+                color: $highlight-color;
+            }
+        }
+    }
+}

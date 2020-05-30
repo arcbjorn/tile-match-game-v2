@@ -1,0 +1,71 @@
+@import '../../../public/assets/styles/variables.scss';
+@import '../../../public/assets/styles/animations.scss';
+
+.tile {
+    width: 100px;
+    height: 100px;
+
+    & .block-backside {
+        width: 100%;
+        height: 100%;
+        background: $tile-color;
+        border: 1px solid $border-color;
+        border-radius: .5rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .block {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        border-radius: .5rem;
+        width: 100%;
+        height: 100%;
+        background: $main-color;
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
+
+
+        & svg {        
+            cursor: pointer;
+            color: $border-color;
+        }
+    }
+
+    &.matched {
+        & .block-backside {
+            background: lightgray;
+        }
+
+        & .block {
+            opacity: 1;
+            transform: none;
+
+            & svg {
+                cursor: not-allowed;
+                color: $highlight-light;
+            }
+        }
+    }
+
+    &.selected {
+        & .block {
+            animation: flipIn .5s ease-in;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    &.to-hide {
+        & .block {
+            transform: none;
+            opacity: 1;
+            animation: flipOut .5s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+    }
+}
